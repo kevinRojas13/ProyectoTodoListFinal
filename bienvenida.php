@@ -71,9 +71,36 @@
             text-align: center;
             font-size: 20px;
             transition: background-color 0.3s;
+            cursor: pointer;
         }
 
         .round-button:hover {
+            background-color: #524de6;
+        }
+
+        /* Estilos para la lista desplegable */
+        .dropdown {
+            position: fixed;
+            top: 100px; /* Ajusta la posición según sea necesario */
+            right: 20px;
+            display: none;
+            flex-direction: column;
+            background-color: #6c63ff;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .dropdown a:hover {
             background-color: #524de6;
         }
     </style>
@@ -83,14 +110,29 @@
         <h1>¿LISTADO DE TAREAS?</h1>
         <div class="button-group">
             <a href="insertar.php">INSERTAR TAREAS</a>
-            <a href="actualizar.php">MODOFICAR TAREAS</a>
+            <a href="actualizar.php">MODIFICAR TAREAS</a>
             <a href="vizualizar.php" class="middle-button">Vizualizar</a>
             <a href="eliminar.php">ELIMINAR</a>
-            <a href="index.php">Cerrar Cesión</a>
+            <a href="index.php">Cerrar Sesión</a>
         </div>
     </div>
 
     <!-- Botón redondo -->
-    <a href="#" class="round-button">+</a>
+    <div class="round-button" onclick="toggleDropdown()">+</div>
+
+    <!-- Lista desplegable -->
+    <div id="dropdown" class="dropdown">
+        <a href="cambiarcontrasena.php">Cambiar Contraseña</a>
+        <a href="salir.php">Salir</a>
+        <a href="editarusuario.php">Editar Usuario</a>
+    </div>
+
+    <script>
+        // Función para alternar la visibilidad de la lista desplegable
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown");
+            dropdown.style.display = (dropdown.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </body>
 </html>
