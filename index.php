@@ -37,7 +37,7 @@
                         <input type="password" placeholder="Contraseña" name= "contrasena">
                         <button>Entrar</button>
                     </form>
-
+                    <!--Register-->
                     <!--Register-->
                     <form action="assets/php/registro_usuario_be.php" method="POST" class="formulario__register">
                         <h2>Regístrarse</h2>
