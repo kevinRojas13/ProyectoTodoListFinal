@@ -54,6 +54,28 @@
         .middle-button {
             order: 2; /* Cambiamos el orden del botón "Vizualizar" para que aparezca después del botón "Actualizar" */
         }
+
+        /* Estilos para el botón redondo */
+        .round-button {
+            display: block;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #6c63ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50%; /* Hacemos que el borde sea redondo */
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .round-button:hover {
+            background-color: #524de6;
+        }
     </style>
 </head>
 <body>
@@ -67,5 +89,8 @@
             <a href="index.php">Cerrar Cesión</a>
         </div>
     </div>
+
+    <!-- Botón redondo -->
+    <a href="#" class="round-button">+</a>
 </body>
 </html>
