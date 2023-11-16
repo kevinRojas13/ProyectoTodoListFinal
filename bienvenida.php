@@ -47,6 +47,7 @@
             font-size: 18px;
             transition: background-color 0.3s;
             width: 200px; /* Agregamos esta propiedad para fijar el ancho de los botones */
+            /* prueba*/
         }
         a:hover {
             background-color: #524de6;
