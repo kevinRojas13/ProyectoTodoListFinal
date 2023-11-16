@@ -122,9 +122,7 @@
 
     <!-- Lista desplegable -->
     <div id="dropdown" class="dropdown">
-        <a href="cambiarcontrasena.php">Cambiar Contraseña</a>
-        <a href="salir.php">Salir</a>
-        <a href="editarusuario.php">Editar Usuario</a>
+        <a href="cambiarcontrasena.php">Editar usuario</a>
     </div>
 
     <script>
